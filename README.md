@@ -5,22 +5,24 @@
 The problem statement is to predict a set points such way,so we get sock-ph value 9.1.
 
 ## Roadmap
-Data collection   
+Data collection  
 Data cleaning and processing  
-Data EDA- slecting Hyper parameter for VAR model  
+Data EDA- selecting hyper parameter for VAR model  
 Training-Testing  
 Infer with live data  
 Create a executable file  
+  
 
-### Data collection
-We have collected data from Osisoft Pi in text formate.collected data stored in `./values/values.txt`.  
-### Data cleaning and processing 
-Path required in data cleaning and processing are confgured in `app.cfg` as below.  
-`[Raw_data]`  
-`value_txt=./values/values.txt`  
-`data_path_p1=./Data/S_data1/`  
-`data_path_p2=./Data/S_data_processed1/`  
-`interpolate_data=./Data/Interpolate1.csv`  
+### Data collection  
+We have collected data from Osisoft Pi in text formate.collected data stored in `./values/values.txt`.    
+### Data cleaning and processing  
+Path required in data cleaning and processing are configured in `app.cfg` as below.  
+```[Raw_data]
+value_txt=./values/values.txt
+data_path_p1=./Data/S_data1/
+data_path_p2=./Data/S_data_processed1/
+interpolate_data=./Data/Interpolate1.csv```
+
 
 ## Run Locally
 EDA - Data resampling,outlier removeal 
